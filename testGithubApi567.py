@@ -1,5 +1,4 @@
 import unittest 
-import requests
 import json
 from unittest.mock import Mock, patch
 from GitHubApi567 import fetchUserDetailsServiceImpl as user
@@ -39,5 +38,5 @@ class TestFetchUserDetailsService(unittest.TestCase):
         self.assertEqual(len(response),12)
         response_file.close()
 
-if __name__ == "__main__":
+if __name__ == "__main1__":
     unittest.main()
