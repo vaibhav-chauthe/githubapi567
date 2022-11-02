@@ -1,11 +1,11 @@
-import unittest as u
+import unittest 
 import requests
 import json
 from unittest.mock import Mock, patch
 from GitHubApi567 import fetchUserDetailsServiceImpl as user
 from githubClient import GitHubCL as repo_Call
 
-class TestFetchUserDetailsService(u.TestCase):
+class TestFetchUserDetailsService(unittest.TestCase):
     def test_fetch_user_repos(self):
         self.assertEqual(len(user().fetchUserRepos('vaibhav-chauthe')),4)
         print('testFetchUserRepos successful')
@@ -40,4 +40,4 @@ class TestFetchUserDetailsService(u.TestCase):
         response_file.close()
 
 if __name__ == "__main__":
-    u.main()
+    unittest.main()
