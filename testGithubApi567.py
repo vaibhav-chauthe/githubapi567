@@ -1,4 +1,5 @@
 import unittest as u
+import requests
 import json
 from unittest.mock import Mock, patch
 from GitHubApi567 import fetchUserDetailsServiceImpl as user
