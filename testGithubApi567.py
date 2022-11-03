@@ -1,8 +1,8 @@
 import unittest 
 import json
 from unittest.mock import Mock, patch
-from GitHubApi567 import fetchUserDetailsServiceImpl as u1
-from githubClient import GitHubCL as repo_Call
+from GitHubApi567 import gImpl as u1
+from githubClient import gCL as repo_Call
 
 class TestFetchUserDetailsService(unittest.TestCase):
     def test_fetch_user_repos(self):

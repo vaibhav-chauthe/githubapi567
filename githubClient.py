@@ -3,7 +3,7 @@ import requests
 import json
 from constants import GITHUB_URL,USERS,REPOS,SLASH,COMMITS
 
-class GitHubCL():
+class gCL():
 
     def fetch_user_repo(username):
         fetch_repos_url = GITHUB_URL + USERS + SLASH + username + REPOS
