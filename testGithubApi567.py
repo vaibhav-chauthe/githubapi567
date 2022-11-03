@@ -38,5 +38,5 @@ class TestFetchUserDetailsService(unittest.TestCase):
         self.assertEqual(len(response),12)
         response_file.close()
 
-if __name__ == "__main1__":
+if __name__ == "__main__":
     unittest.main()
