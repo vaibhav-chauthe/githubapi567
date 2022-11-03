@@ -1,4 +1,4 @@
-from githubClient import GitHubCL as ghcl
+from githubClient import GitHubCL as g1
 from constants import USERNAME
 
 class fetchUserDetailsServiceImpl():
@@ -10,7 +10,7 @@ class fetchUserDetailsServiceImpl():
         try:
             if not username.strip():
                raise ValueError("Username cannot be null")
-            responseList = ghcl.fetch_user_repo(username)
+            responseList = g1.fetch_user_repo(username)
             reposList = []
             for repo in responseList:
                 if(repo['name'].strip()):
@@ -29,7 +29,7 @@ class fetchUserDetailsServiceImpl():
         try:
             if(len(reposList)>0):
                 for repos in reposList:
-                    responseList = ghcl.fetch_repo_commits(username,repos)
+                    responseList = g1.fetch_repo_commits(username,repos)
                     output = {
                               "Repo": repos, 
                               "Number of commits": len(responseList)

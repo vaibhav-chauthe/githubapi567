@@ -1,17 +1,17 @@
 import unittest 
 import json
 from unittest.mock import Mock, patch
-from GitHubApi567 import fetchUserDetailsServiceImpl as user
+from GitHubApi567 import fetchUserDetailsServiceImpl as u1
 from githubClient import GitHubCL as repo_Call
 
 class TestFetchUserDetailsService(unittest.TestCase):
     def test_fetch_user_repos(self):
-        self.assertEqual(len(user().fetchUserRepos('vaibhav-chauthe')),4)
+        self.assertEqual(len(u1().fetchUserRepos('vaibhav-chauthe')),4)
         print('testFetchUserRepos successful')
 
     def test_fetch_user_repos_blank_value(self):
         with self.assertRaises(ValueError):
-            user().fetchUserRepos(' ')
+            u1().fetchUserRepos(' ')
         print('testFetchUserReposBlankValue successful')
 
     #Mock fetch user api
