@@ -9,7 +9,8 @@ jobs:
     steps:
       - checkout
       - run: 
-          command: 
+          name: Run Test
+          command: | 
             pip install pytest
             pip install requests
             pytest --junitxml=test-results/junit.xml testGithubApi567.py
