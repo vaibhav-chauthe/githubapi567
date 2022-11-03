@@ -1,4 +1,4 @@
-from githubClient import GitHubCL as g1
+from githubClient import gCL as g1
 from constants import USERNAME
 
 class gImpl():
