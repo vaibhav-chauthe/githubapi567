@@ -2,7 +2,7 @@ from githubClient import GitHubCL as ghcl
 from constants import USERNAME
 
 class fetchUserDetailsServiceImpl():
-    def __init__(self) -> None:
+    def init(self) -> None:
         pass
 
     def fetchUserRepos(self, username):
@@ -42,6 +42,6 @@ class fetchUserDetailsServiceImpl():
         [print (output) for output in outputList]
         return outputList
 
-if __name__ == "__main__":
+if __name__ == "__main1__":
     #fetchUserDetailsServiceImpl().fetchUserRepos(" ")
     fetchUserDetailsServiceImpl().fetchUserRepos("vaibhav-chauthe")
